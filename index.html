@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-App="KRRclass" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Simple SW Application </title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/css-custom.css" rel="stylesheet">
+</head>
+
+<body ng-controller="MainCtrl" data-ng-init="startMyAwesomeApp()" >
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-acl mb-5">
+    <a class="navbar-brand" href="#">
+      <img style="font-family:verdana"src="http://www.few.vu.nl/~wissen/rw_common/images/Griffioen_Boven_Engels.png" height="80" alt="">
+      Comparison Semantic Web Application 
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mb-5">
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8">
+          <h2> NBA statistics for All-Stars
+          </h2>
+          <div class="intro">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8 align-self-center">
+          <!-- TODO : Ex 2 here -->
+          <div class="dropdown">
+            <button class="dropbtn">Select an Allstar</button>
+            <div class="dropdown-content">
+              <a class="something" ng-click = "MagicJohnson()">Magic Johnson</a>
+              <a class="something" ng-click = "LarryBird()" >Larry Bird</a>
+              <a class="something" ng-click = "AntonioDavis()">Antonio Davis</a>
+              <a class="something" ng-click = "ReggieMiller()">Reggie Miller</a>
+              <a class="something" ng-click = "Hakeem()">Hakeem Olajuwon</a>
+              <a class="something" ng-click = "SteveNash()">Steve Nash</a>
+            </div>
+          </div>
+          <button class="btn btn-outline-secondary" ng-click="startQuery()" type="button">Display</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-8">
+        <h2><font color="#f7a814">{{myDisplayMessage}}</font></h2> 
+        <canvas class="chart chart-bar" chart-data="myDynamicData" chart-labels="myDynamicLabels" chart-series = "myDynamicSeries"> </canvas>
+       
+          </textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JavaScript libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/angular-chart.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
